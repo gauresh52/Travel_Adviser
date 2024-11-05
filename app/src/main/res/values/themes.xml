@@ -1,0 +1,29 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item> <!-- Disables the Action Bar -->
+        <item name="windowNoTitle">true</item> <!-- Removes the title bar -->
+        <item name="materialCalendarFullscreenTheme">@style/Theme.MaterialComponents.DayNight.DarkActionBar</item>
+    </style>
+
+    <style name="Theme.TravelAdviser" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item> <!-- Disables the Action Bar -->
+        <item name="windowNoTitle">true</item> <!-- Removes the title bar -->
+    </style>
+
+
+    <style name="MyCustomDatePicker" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">0dp</item> <!-- Set margin to control the position -->
+
+    </style>
+</resources>

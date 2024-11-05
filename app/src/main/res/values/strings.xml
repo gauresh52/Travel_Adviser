@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TravelAdviser</string>
+    <string name="search_label">Search Screen</string>
+    <string name="calender">calender</string>
+    <string name="tripsection">trip section</string>
+
+
+</resources>

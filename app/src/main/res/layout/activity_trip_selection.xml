@@ -1,0 +1,176 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.trips.TripSelectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- What kind of trip are you planning? -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What kind of trip are you planning?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold" />
+
+        <!-- Trip types -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/solo_trip_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Solo Trip" />
+
+            <Button
+                android:id="@+id/partner_trip_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Partner Trip"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:id="@+id/friends_trip_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Friends Trip"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/family_trip_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Family Trip"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp" />
+        </GridLayout>
+
+        <!-- Interests Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tell us what you're interested in"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold" />
+
+        <!-- Interests Selection -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginTop="8dp">
+
+            <CheckBox
+                android:id="@+id/must_see_attractions"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Must-see Attractions"
+                android:layout_columnWeight="1" />
+
+            <CheckBox
+                android:id="@+id/great_food"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Great Food"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="8dp" />
+
+            <CheckBox
+                android:id="@+id/hidden_gems"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Hidden Gems"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/cuisine_checkbox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Goan Cuisine"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/water_sports"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Water Sports"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/wildlife_sanctuaries"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Wildlife Sanctuaries"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp" />
+
+            <CheckBox
+                android:id="@+id/heritage_architecture"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Heritage Architecture"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:id="@+id/night_markets"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Night Markets"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp" />
+
+            <CheckBox
+                android:id="@+id/beach_shacks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Beach Shacks"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="8dp" />
+        </GridLayout>
+
+        <!-- Back and Submit Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

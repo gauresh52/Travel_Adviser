@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- Interest Section Header -->
+    <TextView
+        android:id="@+id/interest_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interest Title"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <!-- Message when no places found -->
+    <TextView
+        android:id="@+id/no_places_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No places found for this interest."
+        android:visibility="gone"
+        android:textColor="@android:color/holo_red_dark"
+        android:paddingBottom="8dp" />
+
+    <!-- RecyclerView for places under this interest -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/places_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false" />
+</LinearLayout>
